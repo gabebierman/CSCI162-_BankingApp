@@ -19,10 +19,7 @@ class AccountController:
         self.ui.buttonLogout.clicked.connect(self.handle_logout)
 
     def set_banking_state(self, enabled):
-        
-        # TODO Hide widgets before login
-        # TODO show them after successful login
-        pass
+        self.ui.splitterTransaction.setVisible(enabled)
 
     def handle_login(self):
         
